@@ -6,7 +6,7 @@ after_success: |
   [ $TRAVIS_PULL_REQUEST = false ] &&
   pip install ghp-import --user `whoami` &&
   $HOME/.local/bin/ghp-import -n public &&
-  git push -fq https://${TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git gh-pages
+  git push -fq https://${TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git master
 env:
   global:
     - secure: FzPPGkF3ugeRz2r8OOJZkbnZH/04/RB7PCtLZ/eyO6XlUfxjAF5x1U40UGsrgL+7wrLeVQGCgtrZyyBx/ss/tbMg7hqjEOCrefCs2zvxISEfo0pw/hwNpgEppvvWqdtJmJlgjlKmihNGSlvnKqxaIMkwNqOWNVBu6cj/p9A+RM4Nu1zUU6hnnxXEtVNHYEBqSYuXVb7l8j1e9egKXKnXdCz2xV10EiCxdD1gPtMkHzChhlcem7JWJwFwgDI7zmDBiTYhYT3GBO9pWn/QeXlhc8f8WvKBVW4zoNbUir70BZ8kbHabFxYgM3OwT7f2eRMjmOegDNVSHJgfwngw+W8YnaTVIH/dXCxKXGLmtC+CvIsC4noUfuwP4Uz2HQmE2Ghe0d7/l6HyyRX4oJUqMxYyBGjXkLTOp/ZN8L6Ljgqbf6sbTZUpFia64NaLf4ufrNcMfk08cYUCyNwO8KOWJYOc2AaUzGYDSJR0TA0dPAjoAhatXpfRK64nI1d4zI+aWoYuamMQbwd2fn8/s6ii4JRN6rkHjqo0PTsD8285YOx5ihMvW2m1NLVMLnmio9F8Y5srzHbK1UJhX6Uexako7wEDysmxGSoO5KlSslfmubPNuINXN04wy4GDxS3sK5CWKpIn2BIHL//jEzFaCKW7bsCsDZGYaa9y7Wfxp+wHgUR+83Q=
