@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+<head>
+    {{ partial "head.html" . }}
+</head>
+    <body>
+        {{ partial "nav.html" . }}
+
+        <p class="h1 px3 center">All your music, everywhere</p>
+
+        <p class="h4 px3 center">
+            <span class="red">cloudfm</span> combines all your music into a beautiful interface that
+            works on any web browser and mobile phone
+            <img class="fit" src="http://www.subsonic.org/pages/inc/img/screenshot-1.png">
+        </p>
+
+        <div class="flex flex-wrap px3 justify-center center">
+            <p class="col-1 h3">Works with</p>
+            <div class="col-1 block">
+                <img class="fit" style="margin: -20px -45px 0 0" src="https://www.youtube.com/yt/brand/media/image/YouTube-logo-full_color.png">
+            </div>
+            <div class="col-1 block">
+                <img class="fit" src="http://imgjam.com/jamendo_logo.png">
+            </div>
+            <div class="col-1 block">
+                <img class="fit" src="https://spotifypresscom.files.wordpress.com/2015/01/spotify_logo_rgb_green.png?w=300&h=90">
+            </div>
+
+            <div class="col-1 block">
+                <img class="fit" style="margin: 5px 0 0 0" src="https://cf.dropboxstatic.com/static/images/brand/logotype-vflHjIsop.svg">
+            </div>
+        </div>
+
+        <div class="flex flex-wrap mx3 justify-center">
+            <div class="mb1">
+                <a href="#!" class="btn btn-outline red">Try the alpha</a>
+                <a href="#!" class="btn btn-outline red">Subscribe to updates</a>
+            </div>
+        </div>
+
+        <footer class="flex flex-wrap px3 py4 justify-center center">
+
+        </footer>
+
+
+    </body>
+</html>
