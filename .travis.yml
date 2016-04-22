@@ -2,7 +2,7 @@ language: generic
 install: curl -L https://github.com/spf13/hugo/releases/download/v0.15/hugo_0.15_linux_amd64.tar.gz | tar --strip 1 -xz
 script: ./hugo_0.15_linux_amd64
 after_success: |
-  [ $TRAVIS_BRANCH = master ] &&
+  [ $TRAVIS_BRANCH = src ] &&
   [ $TRAVIS_PULL_REQUEST = false ] &&
   pip install ghp-import --user `whoami` &&
   $HOME/.local/bin/ghp-import -n public &&
