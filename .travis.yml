@@ -5,7 +5,7 @@ after_success: |
   [ $TRAVIS_BRANCH = src ] &&
   [ $TRAVIS_PULL_REQUEST = false ] &&
   pip install ghp-import --user `whoami` &&
-  $HOME/.local/bin/ghp-import -n public &&
+  $HOME/.local/bin/ghp-import -n public -b master &&
   git push -fq https://${TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git master
 env:
   global:
