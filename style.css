@@ -1,0 +1,9 @@
+body, html {
+    margin: 0;
+    background-color: #FFF;
+    color: #333;
+}
+
+nav a {
+ color: #333;
+}
